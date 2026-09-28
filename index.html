@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Inventory</title>
+    <script src="index.js" defer></script>
+    <link rel='stylesheet' href="index.css">
+</head>
+<body>
+    <h1>Add an Item to Inventory</h1>
+    <form id='google-sheet-form'>
+        <label>Title</label>
+            <label><input type="text" name="Title"></label><br>
+        <label>Description</label>
+        <label><input type="text" name="Description"></label><br>
+        <label>Size</label>
+            <label><input type="text" name="Size"></label><br>
+        <label>Weight</label>
+            <label><input type="number" name="Weight"></label><br>
+        <label>Category</label>
+            <label>
+                <select name="Category">
+                    <option>Tops</option>
+                    <option>Bottoms</option>
+                    <option>Dresses</option>
+                    <option>Coats & Jackets</option>
+                    <option>Jumpsuits & Playsuits</option>
+                    <option>Suits</option>
+                    <option>Footwear</option>
+                    <option>Accessories</option>
+                    <option>Nightwear</option>
+                    <option>Swimwear</option>
+                </select>
+            </label><br>
+        <div id="subcategory"></div>
+        <label>Color Category</label>
+            <label>
+                <select name="Color Category">
+                    <option>Basics</option>
+                    <option>Bright Colors</option>
+                </select>
+        </label><br>
+        <label>Occasion</label>
+            <label>
+                <select name="Occasion">
+                    <option>Casual</option>
+                    <option>Spring Casual</option>
+                    <option>Going-Out</option>
+                    <option>Winter</option>
+                    <option>Chic/Coquette</option>
+                    <option>Streetwear</option>
+                    <option>Business-Casual</option>
+                    <option>Formal</option>
+                    <option>Workout</option>
+                    <option>Casual Chic</option>
+                    <option>Sleepwear</option>
+                    <option>Beach</option>
+                </select>
+            </label><br>
+        <button id='submit-btn' type="submit">Submit</button>
+    </form>
+    <div id="status-message"></div>
+</body>
+</html>
